@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:2rem;
+    overflow-x:hidden;
+}
+
+.container {
+    width:50vw;
+    height: 90vh; 
+    margin: 0 auto; /*this aligns the whole container to the centre*/
+    border: 1px solid;
+}
+
+
+/* gridbox starts here */
+.grid-box1 {
+    display:grid;
+    height:100%;
+    width: 100%;
+    /* grid-template-columns:400px 400px 400px ; */
+    grid-template-columns: repeat(3,3fr);
+    grid-template-rows: repeat(8, 8fr);
+    gap: 5px;
+ 
+}
+
+/* making the grid box and box colouring */
+
+.grid-box1 .grid1-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(/images/nature-lover.jpeg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.grid-box1 .grid1-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(/images/family-woman.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box1 .grid1-3{
+    background-image: url(/images/web-developer2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box1 .grid1-4{
+    background-image: url(/images/tutor.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box1 .grid1-5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url(/images/my-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0.01%;
+}
+
+.grid-box1 .grid1-6{
+    background-image: url(/images/business-development-manager.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box1 .grid1-7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-image: url(/images/teamwork.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box1 .grid1-8{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-image: url(/images/blogger-3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box1 .grid1-9{
+    background-image: url(/images/mentor.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box1 .grid1-10{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    background-image: url(/images/gardening3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-box1 .grid1-11{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    background-image: url(/images/learner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* gridbox styling part */
+
+@font-face {
+    font-family: "custom";
+    src:url(/css/Leitura-Display-Swashes.otf) format("opentype");
+}
+.grid-box1 p {
+    font-family:"custom";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.grid-box1 .grid1-1 p{
+    transform: rotate(-45deg);
+}
+
+.grid-box1 .grid1-10 p{
+    transform: rotate(45deg);
+}
+
+.grid-box1 .grid1-5 p{
+    font-size: 75px;
+}
